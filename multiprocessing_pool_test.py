@@ -21,5 +21,10 @@ if __name__ == "__main__":
     pool.close()
     pool.join()
 
+    # pool = multiprocessing.Pool(processes=10)
+    # pool.map(foo, xrange(0, 10))
+    # pool.close()
+    # pool.join()
+
     for res in result:
         print res.get()
