@@ -18,3 +18,4 @@ def number_span(tag):
 
 print soup.find(number_span)
 print soup.find(lambda tag: tag.name == 'a' and '登录' in tag.text)
+print soup.find('a', class_=re.compile('.*link.*'))
