@@ -23,3 +23,5 @@ b = base()
 
 # // error, 不能增加新的变量(任何试图创建一个其名不在__slots__中的名字的实例属性都将导致AttributeError异常)
 b.x = 2
+
+

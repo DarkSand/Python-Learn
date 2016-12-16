@@ -15,7 +15,7 @@ Python 是一门动态语言，可以在运行过程中，修改对象的属性�
 
 class test(object):
     # 可以访问foo
-    __slots__ = ('foo');
+    __slots__ = ('foo')
     foo = 1.3
 
 
@@ -23,3 +23,5 @@ a = test()
 print a.foo
 a.bar = 15
 print a.bar
+
+

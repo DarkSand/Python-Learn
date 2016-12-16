@@ -25,3 +25,5 @@ print b.__dict__
 b.x = 2
 b.adds = lambda x, y: x - y
 print b.__dict__
+
+

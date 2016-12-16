@@ -19,3 +19,4 @@ class base(object):
 
 b = base()
 b.y = 3  # readonly
+
