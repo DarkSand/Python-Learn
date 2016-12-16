@@ -9,7 +9,7 @@ def deco(func):
     def _deco(a, b):
         print("before myfunc() called.")
         ret = func(a, b)
-        print("  after myfunc() called. result: %s" % ret)
+        print("after myfunc() called. result: %s" % ret)
         return ret
 
     return _deco
@@ -17,7 +17,7 @@ def deco(func):
 
 @deco
 def myfunc(a, b):
-    print(" myfunc(%s,%s) called." % (a, b))
+    print("myfunc(%s,%s) called." % (a, b))
     return a + b
 
 

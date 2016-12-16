@@ -14,7 +14,7 @@ class locker:
 
     @staticmethod
     def release():
-        print("  locker.release() called.（不需要对象实例）")
+        print("locker.release() called.（不需要对象实例）")
 
 
 def deco(cls):
@@ -36,7 +36,7 @@ def deco(cls):
 
 @deco(locker)
 def myfunc():
-    print(" myfunc() called.")
+    print("myfunc() called.")
 
 
 myfunc()

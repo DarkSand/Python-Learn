@@ -14,7 +14,7 @@ class mylocker:
 
     @staticmethod
     def unlock():
-        print("  mylocker.unlock() called.")
+        print("mylocker.unlock() called.")
 
 
 class lockerex(mylocker):
@@ -24,7 +24,7 @@ class lockerex(mylocker):
 
     @staticmethod
     def unlock():
-        print("  lockerex.unlock() called.")
+        print("lockerex.unlock() called.")
 
 
 def lockhelper(cls):

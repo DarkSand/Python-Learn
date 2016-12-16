@@ -11,7 +11,7 @@ def deco(arg):
         def __deco():
             print("before %s called [%s]." % (func.__name__, arg))
             func()
-            print("  after %s called [%s]." % (func.__name__, arg))
+            print("after %s called [%s]." % (func.__name__, arg))
 
         return __deco
 
@@ -20,12 +20,12 @@ def deco(arg):
 
 @deco("mymodule")
 def myfunc():
-    print(" myfunc() called.")
+    print("myfunc() called.")
 
 
 @deco("module2")
 def myfunc2():
-    print(" myfunc2() called.")
+    print("myfunc2() called.")
 
 
 myfunc()
